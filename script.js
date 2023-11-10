@@ -2,9 +2,11 @@
 function toggleFullScreen() {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
+        document.getElementById("timerControl").style.display = "none";
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
+            document.getElementById("timerControl").style.display = "block";
         }
     }
 }
@@ -16,10 +18,13 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Hidden timer - flashes screen after a set time
-setTimeout(function() {
-    document.body.style.backgroundColor = "black";
+// Function to start timer
+function startTimer(duration) {
     setTimeout(function() {
-        document.body.style.backgroundColor = "white";
-    }, 500); // Flash duration in milliseconds
-}, 5000); // Set timer duration in milliseconds (5000ms = 5 seconds)
+        document.body.style.backgroundColor = "black";
+        setTimeout(function() {
+            document.body.style.backgroundColor = "white";
+            if (document.fullscreenElement) {
+                toggleFullScreen();
+            }
+
