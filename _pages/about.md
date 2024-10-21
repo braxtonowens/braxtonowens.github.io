@@ -20,4 +20,5 @@ I am a believer in [open collaboration](https://en.wikipedia.org/wiki/Open_colla
 
 I am currently conducting research in computational cryo-ET, using both classical and deep ML methods to identify low-signal macromolecular complexes in tomograms. This research allows us to achieve the near-atomic scale resolution needed to understand fundamental life processes.
 
-On a more personal note, I love to read fantasy, snowboard, and teach my three sons that it was actually Leibniz, not Newton, who invented calculus.
+On a more personal note, I love to read fantasy, snowboard, and teach my three
+sons that it was actually Leibniz, not Newton, who invented calculus.
